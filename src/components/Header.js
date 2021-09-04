@@ -6,7 +6,11 @@ import "../Styles/Header.css"
 import FlagIcon from '@material-ui/icons/Flag';
 import SupervisedUserCircleIcon from '@material-ui/icons/SupervisedUserCircle';
 import StorefrontIcon from '@material-ui/icons/Storefront';
-
+import {Avatar, IconButton} from '@material-ui/core';
+import AddIcon from '@material-ui/icons/Add'
+import ForumIcon from '@material-ui/icons/Forum';
+import { NotificationsActiveIcon } from '@material-ui/icons/NotificationsActive';
+import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 
 function Header() {
     return (
@@ -40,8 +44,13 @@ function Header() {
              {/* Header right */}
              <div className='header_right'>
         <div className='header_info'>
-            
+            <Avatar/> 
+            <h4>Jack Rigan</h4>J
         </div>
+
+        <IconButton>
+        <AddIcon/>
+        </IconButton>
 
              </div>
         </div>
