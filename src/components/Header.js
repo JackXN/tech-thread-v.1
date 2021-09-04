@@ -9,7 +9,7 @@ import StorefrontIcon from '@material-ui/icons/Storefront';
 import {Avatar, IconButton} from '@material-ui/core';
 import AddIcon from '@material-ui/icons/Add'
 import ForumIcon from '@material-ui/icons/Forum';
-import { NotificationsActiveIcon } from '@material-ui/icons/NotificationsActive';
+import NotificationsActiveIcon  from '@material-ui/icons/NotificationsActive';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 
 function Header() {
@@ -45,12 +45,22 @@ function Header() {
              <div className='header_right'>
         <div className='header_info'>
             <Avatar/> 
-            <h4>Jack Rigan</h4>J
+            <h4>Jack Rigan</h4>
         </div>
 
         <IconButton>
         <AddIcon/>
         </IconButton>
+        <IconButton>
+        <ForumIcon/>
+        </IconButton>
+        <IconButton>
+        <NotificationsActiveIcon/>
+        </IconButton>
+        <IconButton>
+        <ExpandMoreIcon/>
+        </IconButton>
+     
 
              </div>
         </div>
