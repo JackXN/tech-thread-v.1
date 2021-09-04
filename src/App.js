@@ -7,7 +7,7 @@ import Feed from './components/Feed';
 function App() {
 
   return (
-    <div className="App">
+    <div className="app">
 {/* Header Component */}
 <Header/>
 {/* App body */}
