@@ -8,8 +8,10 @@ function App() {
 
 
 {/* Header Component */}
-
-
+{/* App body */}
+{/* Sidebar */}
+{/* Feed */}
+{/* Widgets */}
 
     </div>
   );
