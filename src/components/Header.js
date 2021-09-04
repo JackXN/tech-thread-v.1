@@ -29,7 +29,7 @@ function Header() {
 
       {/* Header Middle */}
       <div className="header_middle">
-        <div className="header_option">
+        <div className="header_option header_option--active">
           <HomeIcon font-size="large" />
         </div>
         <div className="header_option">
