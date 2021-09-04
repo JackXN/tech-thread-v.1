@@ -1,4 +1,4 @@
-import React, {useState,useEffect} from 'react'
+import React, {useState} from 'react'
 import { Avatar } from '@material-ui/core';
 import "../Styles/InputBox.css";
 import VideocamIcon from '@material-ui/icons/Videocam';
@@ -7,13 +7,14 @@ import EmojiEmotionsIcon from '@material-ui/icons/EmojiEmotions';
 
 function InputBox() {
 
+    const [input, setInput] = useState('');
+    const [imageUrl, setImageUrl] = useState('')
 
 const handleSubmit = (e) => {
    e.preventDefault();
    console.log('submitted')
+
 }
-
-
 
     return (
         <div className='inputBox'>
@@ -22,8 +23,11 @@ const handleSubmit = (e) => {
 <Avatar/>       
 
 <form onSubmit={handleSubmit} className='inputBox_input'>
-    <input type='text' placeholder={'Whats on your mind?'}/>
-<input placeholder='Image URL (optional)'/>
+
+    <input value={input} onChange={(e) =>setInput(e.target.value) } type='text' placeholder={'Whats on your mind?'}/>
+
+<input value={imageUrl} onChange={(e) => setImageUrl(e.target.value)} placeholder='Image URL (optional)'/>
+
 <button type='submit' onSubmit={handleSubmit} hidden>this button is hiding</button>
 </form>
             </div>
