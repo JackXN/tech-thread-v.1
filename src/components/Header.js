@@ -1,4 +1,6 @@
+/* eslint-disable react/jsx-no-comment-textnodes */
 import React from 'react'
+import SearchIcon from '@material-ui/icons/Search';
 import "../Styles/Header.css"
 
 
@@ -6,14 +8,21 @@ import "../Styles/Header.css"
 function Header() {
     return (
         <div className='header'>
-            <h1>Hello</h1>
-            {/* Header Left */}
+        {/* Header left */}
             <div className='header_left'>
-<img src='https://wpguru.co.uk/wp-content/uploads/2019/08/124010.png' alt='facebook-logo'/>
-
+<img src='https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Facebook_Logo_%282019%29.png/1024px-Facebook_Logo_%282019%29.png' alt='facebook-logo'/>
+<div className='header_input'>
+    <SearchIcon/>
+    <input type='text'/>
+</div>
             </div>
-            {/* Header middle */}
-            <div className='header_middle'></div>
+
+            {/* Header Middle */}
+            <div className='header_middle'>
+
+                
+            </div>
+
              {/* Header right */}
              <div className='header_right'></div>
         </div>
