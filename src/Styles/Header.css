@@ -2,7 +2,7 @@
 
 .header {
     display:flex;
-    justify-content: space-between;
+    justify-content: space-around;
     position: sticky;
     background-color: white;
     z-index: 100;
@@ -29,7 +29,7 @@ align-items: center;
     display: flex;
     justify-content: center;
     align-items: center;
-    
+    padding: 10px 20px;
 }
 
 .header_input {

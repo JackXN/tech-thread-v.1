@@ -3,6 +3,7 @@ import './App.css';
 import Header from './components/Header';
 import Sidebar from './components/Sidebar';
 function App() {
+
   return (
     <div className="App">
 {/* Header Component */}
@@ -10,7 +11,7 @@ function App() {
 {/* App body */}
 <div className='app_body'>
 {/* Sidebar */}
-<Sidebar/>
+<Sidebar  />
 {/* Feed */}
 {/* Widgets */}
 </div>
