@@ -1,8 +1,11 @@
 /* eslint-disable react/jsx-no-comment-textnodes */
 import React from 'react'
 import SearchIcon from '@material-ui/icons/Search';
+import HomeIcon from '@material-ui/icons/Home';
 import "../Styles/Header.css"
-
+import FlagIcon from '@material-ui/icons/Flag';
+import SupervisedUserCircleIcon from '@material-ui/icons/SupervisedUserCircle';
+import StorefrontIcon from '@material-ui/icons/Storefront';
 
 
 function Header() {
@@ -19,12 +22,28 @@ function Header() {
 
             {/* Header Middle */}
             <div className='header_middle'>
+           <div className='header_option'>
+               <HomeIcon font-size='large'/>
+           </div>
+           <div className='header_option'>
+               <FlagIcon font-size='large'/>
+           </div>
+           <div className='header_option'>
+               <SupervisedUserCircleIcon font-size='large'/>
+           </div>
+           <div className='header_option'>
+               <StorefrontIcon font-size='large'/>
+           </div>
 
-                
             </div>
 
              {/* Header right */}
-             <div className='header_right'></div>
+             <div className='header_right'>
+        <div className='header_info'>
+            
+        </div>
+
+             </div>
         </div>
     )
 }
