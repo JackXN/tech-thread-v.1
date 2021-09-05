@@ -8,9 +8,7 @@ import Login from './components/Login';
 
 
 function App() {
-
 const user = null;
-
 return (
   //! if there is no active user, display the login page
   <div className='app'>
