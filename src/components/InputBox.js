@@ -12,7 +12,12 @@ function InputBox() {
 
 const handleSubmit = (e) => {
    e.preventDefault();
-   console.log('submitted')
+//    console.log('submitted')
+
+
+
+setInput('');
+setImageUrl('');
 
 }
 
