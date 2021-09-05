@@ -5,7 +5,9 @@ import Sidebar from './components/Sidebar';
 import Feed from './components/Feed';
 import Widgets from './components/Widgets'
 import Login from './components/Login';
-function App () {
+
+
+function App() {
 
 const user = null;
 
