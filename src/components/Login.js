@@ -6,12 +6,17 @@ import {auth, provider} from '../firebase';
 function Login() {
 
 const signIn = () => {
+
+const [{}, dispatch] = useStateValue();
+
+
     auth.signInWithPopup(provider)
     .then((result) => {
         console.log(result)
     })
     .catch((error) => console.log(error))
 }
+
 
     return (
         <div className='login'>
