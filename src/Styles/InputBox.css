@@ -60,3 +60,11 @@ input_top input {
     margin-left: 10px;
     cursor: pointer;
 }
+
+.input_top > form > button {
+    display: none;
+}
+
+.input_top {
+    flex: 1;
+}

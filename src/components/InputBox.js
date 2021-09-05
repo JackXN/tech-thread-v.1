@@ -33,7 +33,7 @@ setImageUrl('');
 
 <input value={imageUrl} onChange={(e) => setImageUrl(e.target.value)} placeholder='Image URL (optional)'/>
 
-<button type='submit' onSubmit={handleSubmit} hidden>this button is hiding</button>
+<button type='submit' onSubmit={handleSubmit}>this button is hiding</button>
 </form>
             </div>
 
@@ -48,10 +48,13 @@ setImageUrl('');
                     <CameraAltIcon style={{color:"green"}}/>
                     <h3>Photo/Video</h3>
                 </div>
+
                 <div className='inputBox_option'>
                     <EmojiEmotionsIcon style={{color:"orange"}}/>
                     <h3>Feeling/Activity</h3>
                 </div>
+
+                
             <div className='input_option'>
 
             </div>

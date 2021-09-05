@@ -11,7 +11,13 @@ function Feed() {
            {/* Message Sender */}
            <InputBox/>
 {/* Post */}
-           <Post/>
+           <Post
+            profilePic='https://cdn.dribbble.com/users/10549/screenshots/9916149/media/a9dbfea8e23e5b8e23db142528c3bc9f.png?compress=1&resize=400x300'
+            image='https://cdn.dribbble.com/users/1068771/screenshots/14225432/media/0da8c461ba3920a8c827d864a6e051ed.jpg?compress=1&resize=400x300'
+            username='JackXN'
+            timestamp='this is a timestamp'
+            message='wow this works'
+/>
         </div>
     )
 }
