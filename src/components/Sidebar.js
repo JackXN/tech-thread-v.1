@@ -7,15 +7,18 @@ import StoreFrontIcon from '@material-ui/icons/Storefront';
 import VideoLibraryIcon from '@material-ui/icons/VideoLibrary';
 import People from '@material-ui/icons/People';
 import { ExpandMoreOutlined } from '@material-ui/icons';
+import { useStateValue } from '../StateProvider';
 
 
 
 
 
 function Sidebar() {
+
+    const [{user}, dispatch] = useStateValue()
     return (
         <div className='sidebar'>
-            <SidebarRow title='Jack Rigan'src='https://pbs.twimg.com/profile_images/1393379709803659264/OCqaM57i_400x400.jpg'/>
+            <SidebarRow title={user.displayName} src={user.photoUrl}/>
             <SidebarRow title='Pages'  Icon={EmojiFlagsIcon}/>
             <SidebarRow title='Friends' Icon={People}/>
             <SidebarRow title='Messenger' Icon={ChatIcon}/>
