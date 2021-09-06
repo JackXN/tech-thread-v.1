@@ -1,9 +1,20 @@
-import React from 'react'
+import React , {useState, useEffect} from 'react'
 import "../Styles/Feed.css";
 import StoryReel from './StoryReel';    
 import InputBox from './InputBox';
 import Post from './Post'
+import db from '../firebase'
+
 function Feed() {
+    const [posts, setPosts] = useState([]);
+
+
+    useEffect(() => {
+db.collectionf('posts').onSnapshot(snapshot => (
+setPosts(snapshot.docs.map(doc => ({id: doc.id, data: doc.data()})))
+))
+    }, [])
+    
     return (
         <div className='feed'>
            {/* Story Reel Component */}

@@ -4,8 +4,10 @@ import "../Styles/InputBox.css";
 import VideocamIcon from '@material-ui/icons/Videocam';
 import CameraAltIcon from '@material-ui/icons/CameraAlt';
 import EmojiEmotionsIcon from '@material-ui/icons/EmojiEmotions';
+import { useStateValue } from '../StateProvider';
 
 function InputBox() {
+const [{user}, dispatch] = useStateValue();
 
     const [input, setInput] = useState('');
     const [imageUrl, setImageUrl] = useState('')
@@ -13,23 +15,19 @@ function InputBox() {
 const handleSubmit = (e) => {
    e.preventDefault();
 //    console.log('submitted')
-
-
-
 setInput('');
 setImageUrl('');
-
 }
 
     return (
         <div className='inputBox'>
             {/* Input Top */}
             <div className='input_top'>
-<Avatar/>       
+<Avatar src={user.photoUrl}/>       
 
 <form onSubmit={handleSubmit} className='inputBox_input'>
 
-    <input value={input} onChange={(e) =>setInput(e.target.value) } type='text' placeholder={'Whats on your mind?'}/>
+    <input value={input} onChange={(e) =>setInput(e.target.value) } type='text' placeholder={`What's on your mind, ${user.displayName}`}/>
 
 <input value={imageUrl} onChange={(e) => setImageUrl(e.target.value)} placeholder='Image URL (optional)'/>
 
@@ -54,7 +52,7 @@ setImageUrl('');
                     <h3>Feeling/Activity</h3>
                 </div>
 
-                
+
             <div className='input_option'>
 
             </div>

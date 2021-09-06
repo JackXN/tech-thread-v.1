@@ -14,7 +14,6 @@ import { useStateValue } from '../StateProvider';
 
 
 function Sidebar() {
-
     const [{user}, dispatch] = useStateValue()
     return (
         <div className='sidebar'>
